@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="parallel.ParallelTestRunner2" time="90.961" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\user\eclipse-workspace\BDD\PROJECTS\Practice\PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2\target\test-classes;C:\Users\user\eclipse-workspace\BDD\PROJECTS\Practice\PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2\target\classes;C:\Users\user\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\user\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\user\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\user\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\user\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\user\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\user\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\user\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\user\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\user\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\user\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\user\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\user\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\user\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\user\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\user\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\user\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\user\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\user\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\user\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-java\7.16.1\cucumber-java-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-core\7.16.1\cucumber-core-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-gherkin\7.16.1\cucumber-gherkin-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.16.1\cucumber-gherkin-messages-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\user\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\user\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\user\.m2\repository\io\cucumber\datatable\7.16.1\datatable-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-plugin\7.16.1\cucumber-plugin-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\docstring\7.16.1\docstring-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\html-formatter\21.3.0\html-formatter-21.3.0.jar;C:\Users\user\.m2\repository\io\cucumber\junit-xml-formatter\0.3.0\junit-xml-formatter-0.3.0.jar;C:\Users\user\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-testng\7.16.1\cucumber-testng-7.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\4.19.1\selenium-java-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\4.19.1\selenium-api-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.19.1\selenium-chrome-driver-4.19.1.jar;C:\Users\user\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.19.1\selenium-chromium-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-json\4.19.1\selenium-json-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.19.1\selenium-manager-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.19.1\selenium-devtools-v121-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.19.1\selenium-devtools-v122-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.19.1\selenium-devtools-v123-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.19.1\selenium-devtools-v85-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.19.1\selenium-edge-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.19.1\selenium-firefox-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-http\4.19.1\selenium-http-4.19.1.jar;C:\Users\user\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.19.1\selenium-ie-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.19.1\selenium-remote-driver-4.19.1.jar;C:\Users\user\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api\1.36.0\opentelemetry-api-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-context\1.36.0\opentelemetry-context-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.36.0\opentelemetry-exporter-logging-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.36.0\opentelemetry-sdk-common-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.36.0\opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.36.0\opentelemetry-sdk-extension-autoconfigure-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.36.0-alpha\opentelemetry-api-events-1.36.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.36.0\opentelemetry-sdk-trace-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.36.0-alpha\opentelemetry-extension-incubator-1.36.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.36.0\opentelemetry-sdk-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.36.0\opentelemetry-sdk-metrics-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.36.0\opentelemetry-sdk-logs-1.36.0.jar;C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-os\4.19.1\selenium-os-4.19.1.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.19.1\selenium-safari-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-support\4.19.1\selenium-support-4.19.1.jar;C:\Users\user\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\user\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-picocontainer\7.16.1\cucumber-picocontainer-7.16.1.jar;C:\Users\user\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\user\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.1\webdrivermanager-5.1.1.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\user\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\user\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\user\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\user\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\user\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\user\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\user\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\user\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire6086022529643070233\surefirebooter-20240811214217028_3.jar C:\Users\user\AppData\Local\Temp\surefire6086022529643070233 2024-08-11T21-42-16_804-jvmRun1 surefire-20240811214217028_1tmp surefire_0-20240811214217028_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\user\eclipse-workspace\BDD\PROJECTS\Practice\PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2\target\test-classes;C:\Users\user\eclipse-workspace\BDD\PROJECTS\Practice\PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2\target\classes;C:\Users\user\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\user\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\user\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\user\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\user\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\user\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\user\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\user\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\user\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\user\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\user\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\user\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\user\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\user\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\user\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\user\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\user\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\user\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\user\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\user\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\user\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-java\7.16.1\cucumber-java-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-core\7.16.1\cucumber-core-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-gherkin\7.16.1\cucumber-gherkin-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.16.1\cucumber-gherkin-messages-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\user\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\user\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\user\.m2\repository\io\cucumber\datatable\7.16.1\datatable-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-plugin\7.16.1\cucumber-plugin-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\docstring\7.16.1\docstring-7.16.1.jar;C:\Users\user\.m2\repository\io\cucumber\html-formatter\21.3.0\html-formatter-21.3.0.jar;C:\Users\user\.m2\repository\io\cucumber\junit-xml-formatter\0.3.0\junit-xml-formatter-0.3.0.jar;C:\Users\user\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-testng\7.16.1\cucumber-testng-7.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\4.19.1\selenium-java-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\4.19.1\selenium-api-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.19.1\selenium-chrome-driver-4.19.1.jar;C:\Users\user\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.19.1\selenium-chromium-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-json\4.19.1\selenium-json-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.19.1\selenium-manager-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.19.1\selenium-devtools-v121-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.19.1\selenium-devtools-v122-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.19.1\selenium-devtools-v123-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.19.1\selenium-devtools-v85-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.19.1\selenium-edge-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.19.1\selenium-firefox-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-http\4.19.1\selenium-http-4.19.1.jar;C:\Users\user\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.19.1\selenium-ie-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.19.1\selenium-remote-driver-4.19.1.jar;C:\Users\user\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api\1.36.0\opentelemetry-api-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-context\1.36.0\opentelemetry-context-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.36.0\opentelemetry-exporter-logging-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.36.0\opentelemetry-sdk-common-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.36.0\opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.36.0\opentelemetry-sdk-extension-autoconfigure-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.36.0-alpha\opentelemetry-api-events-1.36.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.36.0\opentelemetry-sdk-trace-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.36.0-alpha\opentelemetry-extension-incubator-1.36.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.36.0\opentelemetry-sdk-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.36.0\opentelemetry-sdk-metrics-1.36.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.36.0\opentelemetry-sdk-logs-1.36.0.jar;C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-os\4.19.1\selenium-os-4.19.1.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.19.1\selenium-safari-driver-4.19.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-support\4.19.1\selenium-support-4.19.1.jar;C:\Users\user\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\user\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-picocontainer\7.16.1\cucumber-picocontainer-7.16.1.jar;C:\Users\user\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\user\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.1\webdrivermanager-5.1.1.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\user\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\user\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\user\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\user\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\user\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\user\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\user\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\user\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\user\eclipse-workspace\BDD\PROJECTS\Practice\PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire6086022529643070233\surefirebooter-20240811214217028_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="user"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\user\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\Users\user\eclipse-workspace\BDD\PROJECTS\Practice\PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-21;C:\Program Files\apache-maven-3.9.8\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Verify that &quot;Please enter a valid email address (Ex: johndoe@domain.com).&quot; error message is displayed under Email textbox provided user enters Invalid email address in email textbox and clicks on Reset My Password button&quot;, &quot;Forgot Password&quot;](1)" classname="parallel.ParallelTestRunner2" time="55.455">
+    <system-out><![CDATA[
+Scenario: Verify that title of Forgot Password page is "Forgot Your Password?" &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:6&amp#27;[0m
+
+Scenario: Validate that Sign-In page title is "Customer Login" &amp#27;[90m# src/test/resources/parallel/SignIn.feature:25&amp#27;[0m
+
+Scenario Outline: Validate that user logs in successfully using valid credentials &amp#27;[90m# src/test/resources/parallel/SignIn.feature:55&amp#27;[0m
+
+Scenario Outline: Verify that "If there is an account associated with <entered email address> you will receive an email with a link to reset your password." message is displayed provided user enters valid email address in email address textbox followed by click on Rest my account button &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:41&amp#27;[0m
+
+Scenario Outline: Verify that "If there is an account associated with <entered email address> you will receive an email with a link to reset your password." message is displayed provided user enters valid email address in email address textbox followed by click on Rest my account button &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:42&amp#27;[0m
+
+Scenario Outline: Verify that "Please enter a valid email address (Ex: johndoe@domain.com)." error message is displayed under Email textbox provided user enters Invalid email address in email textbox and clicks on Reset My Password button &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:30&amp#27;[0m
+
+Scenario: Verify that "This is a required field." error message is displayed under all Mandatory fields provded user clicks on "Reset my password" button without entering any value in Mandatory field textbox. &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:17&amp#27;[0m
+
+Scenario Outline: Verify that "Please enter a valid email address (Ex: johndoe@domain.com)." error message is displayed under Email textbox provided user enters Invalid email address in email textbox and clicks on Reset My Password button &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:29&amp#27;[0m
+
+Scenario: Validate that Sign-In page form contains below elements:- &amp#27;[90m# src/test/resources/parallel/SignIn.feature:30&amp#27;[0m
+
+Scenario: Verify that user gets below mentioned labels/Fields on "Forgot Password' webpage Labels,"Forgot Password" button,"Please enter your email address below to receive a password reset link.", "Email" ( with *) and "Reset my Password" button &amp#27;[90m# src/test/resources/parallel/ForgotPassword.feature:10&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                                                                                                                                                                                                                                         &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                        &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                                                                                                                                                          &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser clicks on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Reset My Password"&amp#27;[0m&amp#27;[32m button&amp#27;[0m                                                                                                                                                                 &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_clicks_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"This is a required field."&amp#27;[0m&amp#27;[32m is displayed under Email textbox&amp#27;[0m                                                                                                                                              &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_gets_error_email(java.lang.String)&amp#27;[0m
+Before Formatting: 2024-08-11T21:42:58.605473400
+After Formatting: 11-08-2024_21-42-58
+Number of rows :3 and number of cols :1
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                                                                                                                                                                                        &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+Properties got loaded successfully
+Number of rows :3 and number of cols :1
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Sign-In page&amp#27;[0m                                     &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_sign_in_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters credentails from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData2"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet1"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"2"&amp#27;[0m&amp#27;[32m in forgot password form&amp#27;[0m                                                                                                                                                      &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_enters_data_from_and_in_forgot_password_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Reset My Password"&amp#27;[0m&amp#27;[32m button&amp#27;[0m                                                                                                                                                                                                &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_clicks_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser gets error message as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Please enter a valid email address (Ex: johndoe@domain.com)."&amp#27;[0m                                                                                                                                               &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_gets_error_message_as(java.lang.String)&amp#27;[0m
+Title :Forgot Your Password?
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                                                                                                                                                                                 &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Forgot Your Password?"&amp#27;[0m                                                                                                                                                                                             &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mEmail label is displayed on sign-in page&amp#27;[0m                     &amp#27;[90m# parallel.SignIn_StepDefinitions.email_label_is_displayed_on_sign_in_page()&amp#27;[0m
+Title :Forgot Your Password?
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Forgot Your Password?"&amp#27;[0m                            &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mEmail textbox is displayed on sign-in page&amp#27;[0m                    &amp#27;[90m# parallel.SignIn_StepDefinitions.email_textbox_is_displayed_on_sign_in_page()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Sign-In page&amp#27;[0m                                &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_sign_in_page()&amp#27;[0m
+Title :Customer Login
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Customer Login"&amp#27;[0m                   &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPassword label is displayed on sign-in page&amp#27;[0m                   &amp#27;[90m# parallel.SignIn_StepDefinitions.password_label_is_displayed_on_sign_in_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPassword textbox is displayed on sign-in page&amp#27;[0m                 &amp#27;[90m# parallel.SignIn_StepDefinitions.password_textbox_is_displayed_on_sign_in_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mForgot Password Link is displayed&amp#27;[0m                             &amp#27;[90m# parallel.SignIn_StepDefinitions.forgot_password_link_is_displayed()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mCreate An Account button is displayed&amp#27;[0m                         &amp#27;[90m# parallel.SignIn_StepDefinitions.create_an_account_button_is_displayed()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSign-In button is displayed&amp#27;[0m                                   &amp#27;[90m# parallel.SignIn_StepDefinitions.sign_in_button_is_displayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters credentails from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData2"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet2"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"2"&amp#27;[0m&amp#27;[32m in forgot password form&amp#27;[0m                                                                                                                                                                                                       &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_enters_data_from_and_in_forgot_password_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                                                                                                                                                                                                                                         &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+Properties got loaded successfully
+Number of rows :3 and number of cols :1
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Aug 11, 2024 9:42:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:42:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:43:15 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify that title of Forgot Password page is &quot;Forgot Your Password?&quot;&quot;, &quot;Forgot Password&quot;](2)" classname="parallel.ParallelTestRunner2" time="4.673">
+    <system-out><![CDATA[
+Scenario Outline: Validate that user logs in successfully using valid credentials &amp#27;[90m# src/test/resources/parallel/SignIn.feature:56&amp#27;[0m
+Properties got loaded successfully
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                                                                                                                                                                                                &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+Properties got loaded successfully
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters credentails from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData2"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet2"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m&amp#27;[32m in forgot password form&amp#27;[0m                                                                                                                                                                                                       &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_enters_data_from_and_in_forgot_password_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mForgot Password label is displayed&amp#27;[0m                                                                                                                                                                                                              &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_get_label()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPlease enter your email address below to receive a password reset link. label is displayed&amp#27;[0m                                                                                                                                                       &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_get_label_message()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mEmail label is displayed&amp#27;[0m                                                                                                                                                                                                                         &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.Email_label_is_displayed()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mEmail textbox is displayed&amp#27;[0m                                                                                                                                                                                                                       &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.Email_textbox_is_displayed()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Forgot Password page&amp#27;[0m                                                                                                                                                                                                        &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_forgot_password_page()&amp#27;[0m
+Properties got loaded successfully
+Number of rows :3 and number of cols :1
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mReset My Password button is displayed&amp#27;[0m                                                                                                                                                                                                            &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.Reset_My_Password_button_is_displayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters credentails from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData2"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet1"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m&amp#27;[32m in forgot password form&amp#27;[0m                                                                                                                                                      &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_enters_data_from_and_in_forgot_password_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Reset My Password"&amp#27;[0m&amp#27;[32m button&amp#27;[0m                                                                                                                                                                                                &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_clicks_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser gets error message as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Please enter a valid email address (Ex: johndoe@domain.com)."&amp#27;[0m                                                                                                                                               &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_gets_error_message_as(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Sign-In page&amp#27;[0m                                                   &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_sign_in_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Title :Forgot Your Password?
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                                                                                                                                                                                 &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Forgot Your Password?"&amp#27;[0m                                                                                                                                                                                             &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+Number of rows :3 and number of cols :2
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters data from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet1"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m&amp#27;[32m in sign-in form&amp#27;[0m         &amp#27;[90m# parallel.SignIn_StepDefinitions.user_enters_data_from_and_in_sign_in_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:17 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+Aug 11, 2024 9:43:17 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that Sign-In page title is &quot;Customer Login&quot;&quot;, &quot;SignIn&quot;](3)" classname="parallel.ParallelTestRunner2" time="1.664">
+    <system-out><![CDATA[
+@Smoke
+Scenario Outline: Validate that user is not able to login using invalid credentials &amp#27;[90m# src/test/resources/parallel/SignIn.feature:66&amp#27;[0m
+Properties got loaded successfully
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Reset My Password"&amp#27;[0m&amp#27;[32m button&amp#27;[0m                                                                                                                                                                                                                                                 &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_clicks_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser gets success message as &amp#27;[0m&amp#27;[32m&amp#27;[1m"If there is an account associated with razdanamit51@gmail.com you will receive an email with a link to reset your password."&amp#27;[0m                                                                                                                               &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_gets_success_message_as(java.lang.String)&amp#27;[0m
+Title :Customer Login
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                                                                                                                                                                                                                                  &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Customer Login"&amp#27;[0m                                                                                                                                                                                                                                                     &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Reset My Password"&amp#27;[0m&amp#27;[32m button&amp#27;[0m                                                                                                                                                                                                                                                 &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_clicks_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser gets success message as &amp#27;[0m&amp#27;[32m&amp#27;[1m"If there is an account associated with razdanamit51@gmail.com you will receive an email with a link to reset your password."&amp#27;[0m                                                                                                                               &amp#27;[90m# parallel.ForgotPassword_StepDefinitions.user_gets_success_message_as(java.lang.String)&amp#27;[0m
+Title :Customer Login
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                                                                                                                                                                                                                                  &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Customer Login"&amp#27;[0m                                                                                                                                                                                                                                                     &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify that &quot;If there is an account associated with &lt;entered email address&gt; you will receive an email with a link to reset your password.&quot; message is displayed provided user enters valid email address in email address textbox followed by click on Rest my account button&quot;, &quot;Forgot Password&quot;](4)" classname="parallel.ParallelTestRunner2" time="0.474">
+    <system-out><![CDATA[
+@Smoke
+Scenario Outline: Validate that user is not able to login using invalid credentials &amp#27;[90m# src/test/resources/parallel/SignIn.feature:67&amp#27;[0m
+Properties got loaded successfully
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:22 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+Aug 11, 2024 9:43:22 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify that &quot;Please enter a valid email address (Ex: johndoe@domain.com).&quot; error message is displayed under Email textbox provided user enters Invalid email address in email textbox and clicks on Reset My Password button&quot;, &quot;Forgot Password&quot;](5)" classname="parallel.ParallelTestRunner2" time="1.211">
+    <system-err><![CDATA[Aug 11, 2024 9:43:23 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+Aug 11, 2024 9:43:23 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that Sign-In page form contains below elements:-&quot;, &quot;SignIn&quot;](6)" classname="parallel.ParallelTestRunner2" time="2.88">
+    <system-out><![CDATA[Clicked SignIn
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Sign-In button&amp#27;[0m                                                  &amp#27;[90m# parallel.SignIn_StepDefinitions.user_clicks_sign_in_button()&amp#27;[0m
+Title :Home Page
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                    &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Home Page"&amp#27;[0m                                           &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:43:24 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify that user gets below mentioned labels/Fields on &quot;Forgot Password&apos; webpage Labels,&quot;Forgot Password&quot; button,&quot;Please enter your email address below to receive a password reset link.&quot;, &quot;Email&quot; ( with *) and &quot;Reset my Password&quot; button&quot;, &quot;Forgot Password&quot;](7)" classname="parallel.ParallelTestRunner2" time="2.983"/>
+  <testcase name="runScenario[&quot;Verify that &quot;If there is an account associated with &lt;entered email address&gt; you will receive an email with a link to reset your password.&quot; message is displayed provided user enters valid email address in email address textbox followed by click on Rest my account button&quot;, &quot;Forgot Password&quot;](8)" classname="parallel.ParallelTestRunner2" time="3.074"/>
+  <testcase name="runScenario[&quot;Verify that &quot;This is a required field.&quot; error message is displayed under all Mandatory fields provded user clicks on &quot;Reset my password&quot; button without entering any value in Mandatory field textbox.&quot;, &quot;Forgot Password&quot;](9)" classname="parallel.ParallelTestRunner2" time="4.317">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Sign-In page&amp#27;[0m                                                   &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_sign_in_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Number of rows :3 and number of cols :2
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that user logs in successfully using valid credentials&quot;, &quot;SignIn&quot;](10)" classname="parallel.ParallelTestRunner2" time="9.617">
+    <system-out><![CDATA[Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+Properties got loaded successfully
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters data from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet1"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"2"&amp#27;[0m&amp#27;[32m in sign-in form&amp#27;[0m         &amp#27;[90m# parallel.SignIn_StepDefinitions.user_enters_data_from_and_in_sign_in_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:43:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 127, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 127
+Aug 11, 2024 9:43:31 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that user logs in successfully using valid credentials&quot;, &quot;SignIn&quot;](11)" classname="parallel.ParallelTestRunner2" time="13.271">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Sign-In page&amp#27;[0m                                                     &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_sign_in_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Clicked SignIn
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Sign-In button&amp#27;[0m                                                  &amp#27;[90m# parallel.SignIn_StepDefinitions.user_clicks_sign_in_button()&amp#27;[0m
+Title :Home Page
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                    &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Home Page"&amp#27;[0m                                           &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+Number of rows :3 and number of cols :2
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:35 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that user is not able to login using invalid credentials&quot;, &quot;SignIn&quot;](12)" classname="parallel.ParallelTestRunner2" time="17.156">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters data from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet2"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m&amp#27;[32m in sign-in form&amp#27;[0m           &amp#27;[90m# parallel.SignIn_StepDefinitions.user_enters_data_from_and_in_sign_in_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on Sign-In page&amp#27;[0m                                                     &amp#27;[90m# parallel.Background_StepDefinitions.user_is_on_sign_in_page()&amp#27;[0m
+Properties got loaded successfully
+Properties got loaded successfully
+Number of rows :3 and number of cols :2
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters data from &amp#27;[0m&amp#27;[32m&amp#27;[1m"TestData"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sheet2"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"2"&amp#27;[0m&amp#27;[32m in sign-in form&amp#27;[0m           &amp#27;[90m# parallel.SignIn_StepDefinitions.user_enters_data_from_and_in_sign_in_form(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+Clicked SignIn
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Sign-In button&amp#27;[0m                                                    &amp#27;[90m# parallel.SignIn_StepDefinitions.user_clicks_sign_in_button()&amp#27;[0m
+Title :Customer Login
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                      &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Customer Login"&amp#27;[0m                                        &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:39 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that user is not able to login using invalid credentials&quot;, &quot;SignIn&quot;](13)" classname="parallel.ParallelTestRunner2" time="17.549">
+    <system-out><![CDATA[Clicked SignIn
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks Sign-In button&amp#27;[0m                                                    &amp#27;[90m# parallel.SignIn_StepDefinitions.user_clicks_sign_in_button()&amp#27;[0m
+Title :Customer Login
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser gets the page title&amp#27;[0m                                                      &amp#27;[90m# parallel.Background_StepDefinitions.user_gets_the_page_title()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mtitle of the page is &amp#27;[0m&amp#27;[32m&amp#27;[1m"Customer Login"&amp#27;[0m                                        &amp#27;[90m# parallel.Background_StepDefinitions.title_of_the_page_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Aug 11, 2024 9:43:39 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
+
+]]></system-err>
+  </testcase>
+</testsuite>

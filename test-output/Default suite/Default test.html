@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 11 21:36:45 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>84 seconds (84742 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that "This is a required field." error message is displayed under all Mandatory fields provded user clicks on "Reset my password" button without entering any value in Mandatory field textbox.", "Forgot Password"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;email_address-error&quot;]&quot;}
+  (Session info: MicrosoftEdge=127.0.2651.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [74cd3c821d3cb227123e4bd7b2d73912, findElement {value=//*[@id=&quot;email_address-error&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57513}, msedge: {msedgedriverVersion: 127.0.2651.98 (9996f88545e1..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57513/devtoo..., se:cdpVersion: 127.0.2651.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74cd3c821d3cb227123e4bd7b2d73912
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at pages.ForgotPassword_Page.getEmailMandatoryMessage(ForgotPassword_Page.java:65)
+	at parallel.ForgotPassword_StepDefinitions.user_gets_error_email(ForgotPassword_StepDefinitions.java:40)
+	at ✽.&quot;This is a required field.&quot; is displayed under Email textbox(file:///C:/Users/user/eclipse-workspace/BDD/PROJECTS/Practice/PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2/src/test/resources/parallel/ForgotPassword.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1594348150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594348150'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;email_address-error&quot;]&quot;}
+  (Session info: MicrosoftEdge=127.0.2651.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [74cd3c821d3cb227123e4bd7b2d73912, findElement {value=//*[@id=&quot;email_address-error&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57513}, msedge: {msedgedriverVersion: 127.0.2651.98 (9996f88545e1..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57513/devtoo..., se:cdpVersion: 127.0.2651.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74cd3c821d3cb227123e4bd7b2d73912
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at pages.ForgotPassword_Page.getEmailMandatoryMessage(ForgotPassword_Page.java:65)
+	at parallel.ForgotPassword_StepDefinitions.user_gets_error_email(ForgotPassword_StepDefinitions.java:40)
+	at ✽.&quot;This is a required field.&quot; is displayed under Email textbox(file:///C:/Users/user/eclipse-workspace/BDD/PROJECTS/Practice/PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2/src/test/resources/parallel/ForgotPassword.feature:19)
+</pre></div></td>
+<td>51</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that "If there is an account associated with <entered email address> you will receive an email with a link to reset your password." message is displayed provided user enters valid email address in email address textbox followed by click on Rest my account button", "Forgot Password"</td>
+<td><div><pre>java.io.IOException: Stream Closed
+	at java.base/java.io.FileInputStream.available0(Native Method)
+	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:785)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:574)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:551)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:458)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:182)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:149)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:47)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:53)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
+	at utils.XLUtils.getCellCount(XLUtils.java:40)
+	at utils.XLUtils.getAllSheetData(XLUtils.java:96)
+	at parallel.ForgotPassword_StepDefinitions.user_enters_data_from_and_in_forgot_password_form(ForgotPassword_StepDefinitions.java:69)
+	at ✽.User enters credentails from &quot;TestData2&quot;, &quot;Sheet2&quot; and &quot;2&quot; in forgot password form(file:///C:/Users/user/eclipse-workspace/BDD/PROJECTS/Practice/PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2/src/test/resources/parallel/ForgotPassword.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace961795223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace961795223'><pre>java.io.IOException: Stream Closed
+	at java.base/java.io.FileInputStream.available0(Native Method)
+	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:785)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:574)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:551)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:458)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:182)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:149)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:47)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:53)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
+	at utils.XLUtils.getCellCount(XLUtils.java:40)
+	at utils.XLUtils.getAllSheetData(XLUtils.java:96)
+	at parallel.ForgotPassword_StepDefinitions.user_enters_data_from_and_in_forgot_password_form(ForgotPassword_StepDefinitions.java:69)
+	at ✽.User enters credentails from &quot;TestData2&quot;, &quot;Sheet2&quot; and &quot;2&quot; in forgot password form(file:///C:/Users/user/eclipse-workspace/BDD/PROJECTS/Practice/PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2/src/test/resources/parallel/ForgotPassword.feature:34)
+</pre></div></td>
+<td>50</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user logs in successfully using valid credentials", "SignIn"</td>
+<td><div><pre>java.io.IOException: Stream Closed
+	at java.base/java.io.FileInputStream.available0(Native Method)
+	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:785)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:574)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:551)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:458)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:182)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:149)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:47)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:53)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
+	at utils.XLUtils.getCellCount(XLUtils.java:40)
+	at utils.XLUtils.getAllSheetData(XLUtils.java:96)
+	at parallel.SignIn_StepDefinitions.user_enters_data_from_and_in_sign_in_form(SignIn_StepDefinitions.java:143)
+	at ✽.User enters data from &quot;TestData&quot;, &quot;Sheet1&quot; and &quot;1&quot; in sign-in form(file:///C:/Users/user/eclipse-workspace/BDD/PROJECTS/Practice/PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2/src/test/resources/parallel/SignIn.feature:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2043379873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2043379873'><pre>java.io.IOException: Stream Closed
+	at java.base/java.io.FileInputStream.available0(Native Method)
+	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:785)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:574)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:551)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:458)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:182)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:149)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:47)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:53)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
+	at utils.XLUtils.getCellCount(XLUtils.java:40)
+	at utils.XLUtils.getAllSheetData(XLUtils.java:96)
+	at parallel.SignIn_StepDefinitions.user_enters_data_from_and_in_sign_in_form(SignIn_StepDefinitions.java:143)
+	at ✽.User enters data from &quot;TestData&quot;, &quot;Sheet1&quot; and &quot;1&quot; in sign-in form(file:///C:/Users/user/eclipse-workspace/BDD/PROJECTS/Practice/PROJECT4_BDD_DATA_DRIVEN_WAY2_PARALLEL2/src/test/resources/parallel/SignIn.feature:49)
+</pre></div></td>
+<td>49</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that title of Forgot Password page is "Forgot Your Password?"", "Forgot Password"</td>
+<td></td>
+<td>50</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is not able to login using invalid credentials", "SignIn"</td>
+<td></td>
+<td>19</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that "Please enter a valid email address (Ex: johndoe@domain.com)." error message is displayed under Email textbox provided user enters Invalid email address in email textbox and clicks on Reset My Password button", "Forgot Password"</td>
+<td></td>
+<td>50</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that "If there is an account associated with <entered email address> you will receive an email with a link to reset your password." message is displayed provided user enters valid email address in email address textbox followed by click on Rest my account button", "Forgot Password"</td>
+<td></td>
+<td>51</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user gets below mentioned labels/Fields on "Forgot Password' webpage Labels,"Forgot Password" button,"Please enter your email address below to receive a password reset link.", "Email" ( with *) and "Reset my Password" button", "Forgot Password"</td>
+<td></td>
+<td>49</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Sign-In page form contains below elements:-", "SignIn"</td>
+<td></td>
+<td>50</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user logs in successfully using valid credentials", "SignIn"</td>
+<td></td>
+<td>16</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is not able to login using invalid credentials", "SignIn"</td>
+<td></td>
+<td>25</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Sign-In page title is "Customer Login"", "SignIn"</td>
+<td></td>
+<td>48</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+<tr>
+<td title='parallel.ParallelTestRunner2.runScenario()'><b>runScenario</b><br>Test class: parallel.ParallelTestRunner2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that "Please enter a valid email address (Ex: johndoe@domain.com)." error message is displayed under Email textbox provided user enters Invalid email address in email textbox and clicks on Reset My Password button", "Forgot Password"</td>
+<td></td>
+<td>49</td>
+<td>parallel.ParallelTestRunner2@6f45df59</td></tr>
+</table><p>
+</body>
+</html>
